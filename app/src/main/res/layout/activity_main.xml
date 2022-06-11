@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:id="@+id/changelog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Welcome to Asicosilomu Assigned Access!\n\nThis app is a one-stop solution to all your problems! If your phone lacks app pinning functionality and you have a friend that likes to peek around thru your stuff, this is the perfect app!\n\nAlso, app pinning is fairly insecure, as if the pinned app crashes, the app behind it is revealed (or the launcher, where you can't launch anything but can see installed apps and use widgets). I made this app as more of a fun thing to experiment with, but it's pretty neat.\n\nTick the features that whoever you're giving your phone to will be able to access. After that, click the button below, then lock your device. When waking your phone back up, instead of the usual lock screen, you'll see the assigned activity."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <CheckBox
+                android:id="@+id/textEditorChk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Text editor" />
+
+            <CheckBox
+                android:id="@+id/webBrowserChk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Web browser" />
+
+            <CheckBox
+                android:id="@+id/webOtherPagesAllowedChk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:checked="true"
+                android:includeFontPadding="false"
+                android:text="Allow navigation to other pages" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Default page" />
+
+            <EditText
+                android:id="@+id/webDefaultPageEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="https://asicosilomu.github.io/asicosilomu/" />
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="15dp"/>
+
+
+    <Button
+        android:id="@+id/assign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assign" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Made with ❤️ by Asicosilomu" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:id="@+id/changelog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="You have been assigned usage of this device by its owner. You may access any of the features below. Please consult with the device owner for further information. \n\nIf you're the owner, don't forget to lock the device (overview button must be hidden)!"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="15dp"/>
+
+            <Button
+                android:id="@+id/txtedtb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Text Editor" />
+
+            <Button
+                android:id="@+id/webbrowserb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Web Browser" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Made with ❤️ by Asicosilomu" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
